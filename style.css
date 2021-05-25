@@ -1,6 +1,12 @@
+/* 
+The FontStruction “Super Mario Maker Extended”
+(https://fontstruct.com/fontstructions/show/1184080) by Dale Thiessen is
+licensed under a Creative Commons Attribution Non-commercial Share Alike license
+(http://creativecommons.org/licenses/by-nc-sa/3.0/). 
+*/
 @font-face {
 	font-family: 'super mario sans';
-	src: url("font/super-mario-maker-extended.ttf") format("truetype");
+	src: url("/font/super-mario-maker-extended.ttf") format("truetype");
 }
 
 html body {
@@ -336,6 +342,7 @@ template {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	background: #141414;
 	z-index: 9999;
 }
@@ -401,6 +408,7 @@ template {
 	display: none;
 	width: 100vw;
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -421,6 +429,7 @@ template {
 	display: none;
 	width: 100vw;
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -442,6 +451,7 @@ template {
 	background: #FF0000;
 	width: 100vw;
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -471,6 +481,7 @@ template {
 	background: #FFF;
 	width: 100vw;
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -544,12 +555,12 @@ template {
 }
 
 .load_op3_letter {
-	color: #E60002;
+	color: #db4538;
 	display: inline-block;
 }
 
 .load_op3_overlay {
-	background: #E60002;
+	background: #db4538;
 	width: 100%;
 	height: min( 2.8125vw, 54px );
 	position: absolute;
@@ -616,6 +627,7 @@ template {
 
 .intro_img {
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -925,6 +937,7 @@ template {
 
 .favorite_bg {
 	height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	opacity: .3;
 	position: absolute;
 	bottom: 0;
@@ -1427,4 +1440,3 @@ template {
 }
 
 }
-
