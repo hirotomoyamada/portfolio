@@ -155,7 +155,7 @@ const timelineAnimation = ()=> {
         hiddenElement('.serf');
         hiddenElement('.keyhole');
         hiddenElement('.keyhole_figure');
-        hiddenElement('.bg');
+        noneElement('.bg');
 
         zIndex('.shdw', 3);
       },
@@ -164,7 +164,7 @@ const timelineAnimation = ()=> {
         showElement('.serf');
         showElement('.keyhole');
         showElement('.keyhole_figure');
-        showElement('.bg');
+        blockElement('.bg');
 
         zIndex('.shdw', 99);
         startedBgAnimation();
@@ -215,19 +215,19 @@ const timelineAnimation = ()=> {
       scrub: 1,
       onEnter: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onEnterBack: () => {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeave: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       }
     }
   })
@@ -264,19 +264,19 @@ const timelineAnimation = ()=> {
       scrub: 1,
       onEnter: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onEnterBack: () => {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeave: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       }
     }
   })
@@ -307,19 +307,19 @@ const timelineAnimation = ()=> {
       scrub: 1,
       onEnter: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onEnterBack: () => {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeave: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       }
     }
   })
@@ -355,19 +355,19 @@ const timelineAnimation = ()=> {
       scrub: 1,
       onEnter: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onEnterBack: () => {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeave: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       }
     }
   })
@@ -420,19 +420,19 @@ const timelineAnimation = ()=> {
       scrub: 1,
       onEnter: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onEnterBack: () => {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeave: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
-        hiddenElement('.bg');
+        noneElement('.bg');
       }
     }
   })
@@ -485,7 +485,7 @@ const timelineAnimation = ()=> {
       ease: Power4.easeIn,
       scrub: true,
       onEnter: ()=> {
-        hiddenElement('.bg');
+        noneElement('.bg');
 
         zIndex('.shdw', 3);
       },
@@ -493,7 +493,7 @@ const timelineAnimation = ()=> {
         hiddenElement('.history');
         hiddenElement('.achievement');
         hiddenElement('.client');
-        hiddenElement('.bg');
+        noneElement('.bg');
 
         zIndex('.shdw', 3);
       },
@@ -501,18 +501,18 @@ const timelineAnimation = ()=> {
         showElement('.history');
         showElement('.achievement');
         showElement('.client');
-        hiddenElement('.bg');
+        noneElement('.bg');
 
         zIndex('.shdw', 3);
         bodyBgChange('#FFF');
       },
       onLeaveBack: ()=> {
-        hiddenElement('.bg');
+        noneElement('.bg');
 
         zIndex('.shdw', 3);
       }
     }
-  })
+  })  
   .to('.shdw_me', {
     y: '100%'
   })
