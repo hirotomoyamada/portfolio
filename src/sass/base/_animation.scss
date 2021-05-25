@@ -1,0 +1,56 @@
+// favorite要素のウルトラマン背景アニメーション
+@keyframes flash {
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+// scrollMouseアニメーション
+@keyframes scroll {
+  0% { 
+    opacity: 0;
+    cy: 481;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% { 
+    opacity: 0;
+    cy: 231;
+  }
+}
+
+// alreadyのアニメーション
+@keyframes moveScale {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0);
+    }
+}
+

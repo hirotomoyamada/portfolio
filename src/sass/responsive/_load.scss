@@ -1,0 +1,19 @@
+// ページのレスポンシブ設定
+$width: responsive-width(sp);
+
+// ここから
+@media (max-width: $width) {
+  
+  .load {
+    font-size: auto-min(24px);
+
+    &_op3 {
+
+      &_overlay {
+        height: auto-min(30px);
+      }
+    }
+  }
+}
+
+// ここまで

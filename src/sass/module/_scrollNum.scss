@@ -1,0 +1,32 @@
+// モジュールのレスポンシブ設定
+$width: responsive-width(pc);
+
+// ここから
+
+.scrollNum {
+  position: fixed;
+  bottom: auto-min(50px);
+  right: auto-min(50px);
+  z-index: 99;
+  color: $main_clr;
+  font-family: $sub_ff;
+
+  &_value {
+    display: inline-block;
+    font-size: auto-min(72px);
+  }
+
+  &_tag {
+    font-size: auto-min(32px);
+  }
+
+  &_egg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ここまで
