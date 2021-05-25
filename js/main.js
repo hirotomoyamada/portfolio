@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
     sessionStorage.setItem(keyName, keyValue);
 
     //初回アクセス時処理
-    stopAlreadyAnimation();
     window.addEventListener('load', load)
   } else {
     // 通常アクセス時処理

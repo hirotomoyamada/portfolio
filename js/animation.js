@@ -2,7 +2,8 @@
 const load = ()=> {
   
   tl = new TimelineMax();
-  tl.staggerFromTo('.load_op1_letter span', 1, {y: '50px'}, {y: 0, ease: Power2.easeInOut}, .1).addLabel('op1_in')
+  tl.to('.already', .88 , {opacity: 0, display: 'none', ease: Power2.easeIn}).add('already_out')
+    .staggerFromTo('.load_op1_letter span', 1, {y: '50px'}, {y: 0, ease: Power2.easeInOut}, .1, 'already_out+=.1').addLabel('op1_in')
     .to('.load_op1_letter', .5, {opacity: 0, ease: Power2.easeInOut,}, 'op1_in+=.8').addLabel('op1_out')
     .staggerFromTo('.load_op2_letter span', 1, {y: '50px', opacity: 0}, {y: 0, opacity: 1, ease: Power2.easeInOut}, .1, 'op1_out+=.3').addLabel('op2_in')
     .from('.load_op2', 1, {x: '90%', ease: Power2.easeInOut,}, 'op2_in+=.1').addLabel('op2_slide')
@@ -22,8 +23,7 @@ const load = ()=> {
 const already = ()=> {
 
   tl = new TimelineMax();
-  tl.staggerTo('.already_el', 1.8, {opacity: 0, ease: Power4.easeOut}, .2).addLabel('alreadyEl')
-    .to('.already', .3, {opacity: 0, display: 'none', ease: Power2.easeIn}, 'alreadyEl+=.2')
+  tl.to('.already', .88, {opacity: 0, display: 'none', ease: Power2.easeIn}, '<')
     .call(()=> {document.body.classList.remove('lock')})
     .from('.intro_img', 1, {x: '10%', opacity: 0, ease: Power2.easeOut}).addLabel('intro_img')
     .from('.intro_ttl', 1, {y: '-100%', opacity: 0, ease: Power2.easeOut}, 'intro_img+=.1')
@@ -34,12 +34,6 @@ const already = ()=> {
 const stopLoadAnimation = ()=> {
   const load = document.getElementById('load');
   load.style.display = 'none';
-}
-
-// alreadyアニメーション制御
-const stopAlreadyAnimation = ()=> {
-  const already = document.getElementById('already');
-  already.style.display = 'none';
 }
 
 // shdwアニメーション
