@@ -1,3 +1,4 @@
+// タイムラインアニメーション
 const timelineAnimation = ()=> {
 
   // intro
