@@ -439,7 +439,7 @@ template {
 
 .evangelion_timeline_03 {
 	display: none;
-	background: #db4538;
+	background: #FF0000;
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
@@ -544,12 +544,12 @@ template {
 }
 
 .load_op3_letter {
-	color: #db4538;
+	color: #E60002;
 	display: inline-block;
 }
 
 .load_op3_overlay {
-	background: #db4538;
+	background: #E60002;
 	width: 100%;
 	height: min( 2.8125vw, 54px );
 	position: absolute;
@@ -855,7 +855,7 @@ template {
 
 .ultraman {
 	z-index: 7;
-	background: #e60002;
+	background: #E60002;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -996,6 +996,7 @@ template {
 }
 
 .scrollNum_tag {
+	display: inline-block;
 	font-size: min( 1.66667vw, 32px );
 }
 
@@ -1005,6 +1006,56 @@ template {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.premonition_0 {
+	-webkit-animation-name: premonition;
+	animation-name: premonition;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.premonition_1 {
+	-webkit-animation-name: premonition;
+	animation-name: premonition;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.premonition_2 {
+	-webkit-animation-name: premonition;
+	animation-name: premonition;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+
+.premonition_3 {
+	-webkit-animation-name: premonition;
+	animation-name: premonition;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
 }
 
 .shdw {
@@ -1317,6 +1368,62 @@ template {
 75% {
 	-webkit-transform: scale(0);
 	transform: scale(0);
+}
+
+}
+
+@-webkit-keyframes premonition {
+
+0% {
+	-webkit-transform: translate(-0.4%, 0.6%);
+	transform: translate(-0.4%, 0.6%);
+	opacity: 1;
+}
+
+40% {
+	-webkit-transform: scale(0.5%, -0.4%);
+	transform: scale(0.5%, -0.4%);
+	opacity: .9;
+}
+
+80% {
+	-webkit-transform: translate(-0.2%, -0.5%);
+	transform: translate(-0.2%, -0.5%);
+	opacity: 1;
+}
+
+100% {
+	-webkit-transform: translate(0.2%, 0.2%);
+	transform: translate(0.2%, 0.2%);
+	opacity: .8;
+}
+
+}
+
+@keyframes premonition {
+
+0% {
+	-webkit-transform: translate(-0.4%, 0.6%);
+	transform: translate(-0.4%, 0.6%);
+	opacity: 1;
+}
+
+40% {
+	-webkit-transform: scale(0.5%, -0.4%);
+	transform: scale(0.5%, -0.4%);
+	opacity: .9;
+}
+
+80% {
+	-webkit-transform: translate(-0.2%, -0.5%);
+	transform: translate(-0.2%, -0.5%);
+	opacity: 1;
+}
+
+100% {
+	-webkit-transform: translate(0.2%, 0.2%);
+	transform: translate(0.2%, 0.2%);
+	opacity: .8;
 }
 
 }

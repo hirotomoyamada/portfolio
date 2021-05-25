@@ -284,7 +284,7 @@ $width: responsive-width(pc);
 .ultraman {
   z-index: 7;
 
-  background: #e60002;
+  background: $acnt_clr;
 
   display: flex;
   justify-content: center;

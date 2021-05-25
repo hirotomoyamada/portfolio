@@ -130,18 +130,35 @@ const scrollNumAnimation = ()=> {
       i = n;
     }
 
-    if (n == 100) {
+    if (99 <= n) {
       tl = new TimelineMax();
       tl.to(el3, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
         .set(el3, {y: '-100%'})
         .call(()=> { el3.textContent = 4;})
         .to(el3, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
-    } else {
+      tl = new TimelineMax();
+      tl.to(el2, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
+        .set(el2, {y: '-100%'})
+        .call(()=> { el2.textContent = 0;})
+        .to(el2, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
+      tl = new TimelineMax();
+      tl.to(el1, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
+        .set(el1, {y: '-100%'})
+        .call(()=> { el1.textContent = 0;})
+        .to(el1, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
+    }
+
+    if (n == 98) {
       tl = new TimelineMax();
       tl.to(el3, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
         .set(el3, {y: '-100%'})
         .call(()=> { el3.textContent = '';})
         .to(el3, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
+      tl = new TimelineMax();
+      tl.to(el2, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
+        .set(el2, {y: '-100%'})
+        .call(()=> { el2.textContent = 9;})
+        .to(el2, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
     }
   })
 

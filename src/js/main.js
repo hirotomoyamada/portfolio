@@ -364,6 +364,11 @@ const zIndex = (el, value)=> {
   target.style.zIndex = value;
 }
 
+// bodyのbgを変更
+const bodyBgChange= (clr)=> {
+  document.body.style.backgroundColor = clr;
+}
+
 // 100vhをCSSに反映
 const setFillHeight = ()=> {
   const vh = window.innerHeight * 0.01;

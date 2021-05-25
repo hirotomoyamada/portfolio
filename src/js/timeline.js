@@ -448,6 +448,7 @@ const timelineAnimation = ()=> {
         hiddenElement('.bg');
 
         zIndex('.shdw', 3);
+        bodyBgChange('#FFF');
       },
       onLeaveBack: ()=> {
         hiddenElement('.bg');
@@ -505,7 +506,13 @@ const timelineAnimation = ()=> {
       trigger: '.scrollTimeline',
       start: '72% top',
       end: '78% top',
-      scrub: 1
+      scrub: 1,
+      onEnter: ()=> {
+        bodyBgChange('#E60002');
+      },
+      onLeaveBack: ()=> {
+        bodyBgChange('#FFF');
+      }
     }
   })
   .from('.favorite_ttl span', {
@@ -605,23 +612,25 @@ const timelineAnimation = ()=> {
       scrub: true,
       onEnter: ()=> {
         zIndex('.shdw', 99);
-      },
-      onLeave: ()=> {
+        bodyBgChange('#000');
+
         hiddenElement('.ultraman');
         hiddenElement('.favorite');
         hiddenElement('.godzilla');
 
-        zIndex('.shdw', 99);
-      },
-      onEnterBack: ()=> {
-        showElement('.ultraman');
-        showElement('.favorite');
-        showElement('.godzilla');
-
-        zIndex('.shdw', 3);
+        const el = document.querySelectorAll('.scrollNum_value');
+        el.forEach((target, index) => {
+          target.classList.add(`premonition_${index}`);
+        })
+        document.querySelector('.scrollNum_tag').classList.add('premonition_3');
       },
       onLeaveBack: ()=> {
         zIndex('.shdw', 3);
+        bodyBgChange('#E60002');
+
+        showElement('.ultraman');
+        showElement('.favorite');
+        showElement('.godzilla');
       }
     }
   })
@@ -638,7 +647,7 @@ const timelineAnimation = ()=> {
     ease: Power4.easeOut
   })
   .to('.scrollNum', {
-  color: '#db4538',
+  color: '#E60002',
   delay: 800
   }, '<')
   .from('.egg', {
