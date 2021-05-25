@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   } else {
     // 通常アクセス時処理
     stopLoadAnimation();
-    already();  
+    already();
   }
   return false;
 });
