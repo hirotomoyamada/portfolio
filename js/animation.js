@@ -52,34 +52,34 @@ const shdwAnimation = ()=> {
 
     switch (y) {
       case 0: 
-        shdw.src = '..img/shdw/00.png';
+        shdw.src = '..img/00.png';
         break;
       case 1:
-        shdw.src = '..img/shdw/01.png';
+        shdw.src = '..img/01.png';
         break;
       case 2:
-        shdw.src = '..img/shdw/02.png';
+        shdw.src = '..img/02.png';
         break;
       case 3:
-        shdw.src = '..img/shdw/03.png';
+        shdw.src = '..img/03.png';
         break;
       case 4:
-        shdw.src = '..img/shdw/04.png';
+        shdw.src = '..img/04.png';
         break;
       case 5:
-        shdw.src = '..img/shdw/05.png';
+        shdw.src = '..img/05.png';
         break;
       case 6:
-        shdw.src = '..img/shdw/06.png';
+        shdw.src = '..img/06.png';
         break;
       case 7:
-        shdw.src = '..img/shdw/07.png';
+        shdw.src = '..img/07.png';
         break;
       case 8:
-        shdw.src = '..img/shdw/08.png';
+        shdw.src = '..img/08.png';
         break;
       case 9:
-        shdw.src = '..img/shdw/09.png';
+        shdw.src = '..img/09.png';
         break;
     }
   })
