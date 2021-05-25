@@ -357,6 +357,18 @@ const hiddenElement = (el)=> {
   target.style.opacity = 0;
 }
 
+// 要素を表示
+const showElement = (el)=> {
+  const target = document.querySelector(el);
+  target.style.display = 'block';
+}
+
+// 要素を非表示
+const hiddenElement = (el)=> {
+  const target = document.querySelector(el);
+  target.style.opacity = 'none';
+}
+
 // 要素のzindexを操作
 const zIndex = (el, value)=> {
   const target = document.querySelector(el);
