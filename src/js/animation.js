@@ -145,6 +145,7 @@ const scrollNumAnimation = ()=> {
     }
   })
 
+   //　読み込み時、1回だけ実行させる    
   window.addEventListener('load', ()=> {
     const y = window.pageYOffset;
     const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
