@@ -366,7 +366,7 @@ const blockElement = (el)=> {
 // 要素を非表示
 const noneElement = (el)=> {
   const target = document.querySelector(el);
-  target.style.opacity = 'none';
+  target.style.display = 'none';
 }
 
 // 要素のzindexを操作
