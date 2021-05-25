@@ -216,6 +216,18 @@ const timelineAnimation = ()=> {
       onEnter: ()=> {
         zIndex('.shdw', 3);
         hiddenElement('.bg');
+      },
+      onEnterBack: () => {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeave: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeaveBack: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
       }
     }
   })
@@ -251,9 +263,20 @@ const timelineAnimation = ()=> {
       end: '45% top',
       scrub: 1,
       onEnter: ()=> {
-        hiddenElement('.bg');
-
         zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onEnterBack: () => {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeave: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeaveBack: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
       }
     }
   })
@@ -283,9 +306,20 @@ const timelineAnimation = ()=> {
       end: '51% top',
       scrub: 1,
       onEnter: ()=> {
-        hiddenElement('.bg');
-
         zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onEnterBack: () => {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeave: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeaveBack: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
       }
     }
   })
@@ -320,9 +354,20 @@ const timelineAnimation = ()=> {
       end: '58% top',
       scrub: 1,
       onEnter: ()=> {
-        hiddenElement('.bg');
-
         zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onEnterBack: () => {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeave: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeaveBack: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
       }
     }
   })
@@ -374,9 +419,20 @@ const timelineAnimation = ()=> {
       end: '65% top',
       scrub: 1,
       onEnter: ()=> {
-        hiddenElement('.bg');
-
         zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onEnterBack: () => {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeave: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
+      },
+      onLeaveBack: ()=> {
+        zIndex('.shdw', 3);
+        hiddenElement('.bg');
       }
     }
   })
