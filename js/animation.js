@@ -23,7 +23,8 @@ const load = ()=> {
 const already = ()=> {
 
   tl = new TimelineMax();
-  tl.to('.already', .88, {opacity: 0, display: 'none', ease: Power2.easeIn}, '<')
+  tl.staggerTo('.already_el', 2.2, {opacity: 0, ease: Power4.easeOut}).addLabel('alreadyEl')
+    .to('.already', .3, {opacity: 0, display: 'none', ease: Power2.easeIn}, 'alreadyEl+=.2')
     .call(()=> {document.body.classList.remove('lock')})
     .from('.intro_img', 1, {x: '10%', opacity: 0, ease: Power2.easeOut}).addLabel('intro_img')
     .from('.intro_ttl', 1, {y: '-100%', opacity: 0, ease: Power2.easeOut}, 'intro_img+=.1')
