@@ -146,7 +146,6 @@ const scrollNumAnimation = ()=> {
   })
 
   window.addEventListener('load', ()=> {
-    console.log('一回だけ実行');
     const y = window.pageYOffset;
     const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const n = Math.trunc((y / h) * 100);
