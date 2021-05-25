@@ -1,7 +1,7 @@
+// bgアニメーション
 const c = document.getElementById("bg");
 const ctx = c.getContext("2d");
 
-// bgアニメーション
 const bgAnimation = ()=> {
 
   // 格納される配列
