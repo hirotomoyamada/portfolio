@@ -180,11 +180,11 @@ const scrollNumAnimation = ()=> {
 const evangelion = ()=> {
   tl = new TimelineMax();
   tl.to('.evangelion', .1, {display: 'block'})
-    .to('.evangelion_timeline_01', 3, {display: 'block'})
+    .to('.evangelion_timeline_01', 2, {display: 'block'})
     .to('.evangelion_timeline_01', .1, {display: 'none'})
-    .to('.evangelion_timeline_02', 3, {display: 'block'})
+    .to('.evangelion_timeline_02', 2, {display: 'block'})
     .to('.evangelion_timeline_02', .1, {display: 'none'})
-    .to('.evangelion_timeline_03', 3, {display: 'block'})
+    .to('.evangelion_timeline_03', 2, {display: 'block'})
     .to('.evangelion_timeline_03', .1, {display: 'none'})
     .to('.evangelion_timeline_04', 3, {display: 'block'})
 }
