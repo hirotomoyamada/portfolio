@@ -39,6 +39,7 @@ window.addEventListener('resize', ()=> {
   setFillHeight();
 });
 
+// コンテンツ内容を格納
 const historys_01 = {
   category: 'history_01',
   tag: {
