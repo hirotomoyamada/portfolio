@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'super mario sans';
-	src: url("/font/super-mario-maker-extended.ttf") format("truetype");
+	src: url("font/super-mario-maker-extended.ttf") format("truetype");
 }
 
 html body {
