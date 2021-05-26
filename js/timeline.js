@@ -66,14 +66,14 @@ const timelineAnimation = ()=> {
     }
   })
   .from('.about_desc span', {
-    y: ()=> {return anime.random(-500, 500)},
+    y: 'random(-500, 500)',
     opacity: 0,
     duration: 100,
     ease: Power4.easeOut,
     stagger: 10
   })
   .from('.about_ttl span', {
-    x: ()=> {return anime.random(-500, 500)},
+    x: 'random(-500, 500)',
     opacity: 0,
     duration: 100,
     ease: Power4.easeOut,
@@ -103,8 +103,8 @@ const timelineAnimation = ()=> {
     }
   })
   .from('.serf_timeline_01 span', {
-    y: ()=> {return anime.random(-500, 500)},
-    rotate: ()=> {return anime.random(-90, 90)},
+    y: 'random(-500, 500)',
+    rotate: 'random(-90, 90)',
     opacity: 0,
     duration: 100,
     ease: Power4.easeOut,
@@ -119,8 +119,8 @@ const timelineAnimation = ()=> {
     stagger: 10
   })
   .from('.serf_timeline_03 span', {
-    y: ()=> {return anime.random(-500, 500)},
-    rotate: ()=> {return anime.random(-90, 90)},
+    y: 'random(-500, 500)',
+    rotate: 'random(-90, 90)',
     opacity: 0,
     duration: 100,
     ease: Power4.easeOut,
@@ -239,9 +239,9 @@ const timelineAnimation = ()=> {
   })
   .from('.history_01_contents span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -282,9 +282,9 @@ const timelineAnimation = ()=> {
   })
   .from('.history_02_contents span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -325,9 +325,9 @@ const timelineAnimation = ()=> {
   })
   .from('.history_03_contents span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -378,7 +378,7 @@ const timelineAnimation = ()=> {
     ease: Power4.easeOut
   })
   .from('.achievement_ttl span', {
-    y: ()=> {return anime.random(-500, 500)},
+    y: 'random(-500, 500)',
     opacity: 0,
     duration: 2000,
     stagger: 100,
@@ -386,9 +386,9 @@ const timelineAnimation = ()=> {
   })
   .from('.achievement_content span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -443,7 +443,7 @@ const timelineAnimation = ()=> {
     ease: Power4.easeOut
   })
   .from('.client_ttl span', {
-    y: ()=> {return anime.random(-500, 500)},
+    y: 'random(-500, 500)',
     opacity: 0,
     duration: 2000,
     stagger: 100,
@@ -451,9 +451,9 @@ const timelineAnimation = ()=> {
   })
   .from('.client_content span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -572,7 +572,7 @@ const timelineAnimation = ()=> {
     }
   })
   .from('.favorite_ttl span', {
-    y: ()=> {return anime.random(-500, 500)},
+    y: 'random(-500, 500)',
     opacity: 0,
     duration: 2000,
     stagger: 100,
@@ -585,9 +585,9 @@ const timelineAnimation = ()=> {
   }, '<')
   .from('.favorite_01_contents span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
@@ -612,9 +612,9 @@ const timelineAnimation = ()=> {
   })
   .from('.favorite_02_contents span', {
     scale: .1,
-    rotate: ()=> {return anime.random(-360, 360)},
-    x: ()=> {return anime.random(500, -500)},
-    y: ()=> {return anime.random(500, -500)},
+    rotate: 'random(-360, 360)',
+    x: 'random(500, -500)',
+    y: 'random(500, -500)',
 
     opacity: 0,
     duration: 3000,
