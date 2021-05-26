@@ -604,7 +604,11 @@ template {
 }
 
 .scrollTimeline {
-	height: 143100px;
+/* わたしの戦闘力は53万です */
+/* ですが、もちろんフルパワーであなたと戦う気はありませんからご心配なく・・・ */
+/* まずは、ギニューさん。お相手してあげなさい。 */
+/* 	hegiht: 530000px; */
+	height: 120000px;
 	width: 100px;
 	position: absolute;
 	top: 0;
