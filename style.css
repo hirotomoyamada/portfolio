@@ -1198,6 +1198,7 @@ template {
 }
 
 .favorite_content {
+	height: 55vh;
 	margin-bottom: clamp(24px, 6.1657vw, 32px);
 }
 
