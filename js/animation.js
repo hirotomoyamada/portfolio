@@ -92,19 +92,25 @@ const scrollNumAnimation = ()=> {
   const el2 = document.querySelector('.scrollNum_02');
   const el3 = document.querySelector('.scrollNum_03');
 
+  // 初期値
   let i = 0;
   let i1 = 0;
   let i2 = 0;
 
   // スクロール時実行
   window.addEventListener('scroll', ()=> {
+    // ページ全体の高さと現在位置Yを取得
     const y = window.pageYOffset;
     const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // 全体を％に変換
     const n = Math.trunc((y / h) * 100);
 
+    // 1桁を抽出
     const n1 = Math.floor(n / 1) % 10;
+    // 2桁を抽出
     const n2 = Math.floor(n / 10) % 10;
     
+    // 1桁アニメーション
     if (i !== n) {
       if (i1 !== n1) {
         tl = new TimelineMax();
@@ -114,6 +120,8 @@ const scrollNumAnimation = ()=> {
           .to(el1, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
         i1 = n1;
       }
+
+      // 2桁アニメーション
       if (i2 !== n2) {
         tl = new TimelineMax();
         tl.to(el2, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
@@ -125,6 +133,7 @@ const scrollNumAnimation = ()=> {
       i = n;
     }
 
+    // 99以上アニメーション ※SPビューだと100に届かない問題を99で調整
     if (99 <= n) {
       tl = new TimelineMax();
       tl.to(el3, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
@@ -143,6 +152,7 @@ const scrollNumAnimation = ()=> {
         .to(el1, 1, {opacity: 1, y: '0%', ease: Power4.easeIn})
     }
 
+    // 99から正常に戻るアニメーション
     if (n == 98) {
       tl = new TimelineMax();
       tl.to(el3, 1, {opacity: 0, y: '100%', ease: Power4.easeIn})
