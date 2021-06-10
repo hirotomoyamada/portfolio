@@ -370,12 +370,12 @@ template {
 
 .already_el:nth-child(-n+3) {
 	left: 16px;
-	top: 54px;
+	top: 48px;
 }
 
 .already_el:nth-child(n+7) {
 	left: -16px;
-	top: -54px;
+	top: -48px;
 }
 
 .already_el:nth-child(-4n+9) {
