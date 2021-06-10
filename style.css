@@ -358,8 +358,8 @@ template {
 
 .already_el {
 	background: #FFF;
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 	position: relative;
 	-webkit-animation: moveScale 1.5s linear infinite -0.5s;
 	animation: moveScale 1.5s linear infinite -0.5s;
