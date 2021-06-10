@@ -369,13 +369,13 @@ template {
 }
 
 .already_el:nth-child(-n+3) {
-	left: 24px;
-	top: 72px;
+	left: 16px;
+	top: 54px;
 }
 
 .already_el:nth-child(n+7) {
-	left: -24px;
-	top: -72px;
+	left: -16px;
+	top: -54px;
 }
 
 .already_el:nth-child(-4n+9) {
