@@ -184,7 +184,6 @@ const bgAnimation = ()=> {
 
   // イベントの作成
   const addEvent = ()=> {
-    document.addEventListener("touchstart", handleEvent);
     document.addEventListener("click", handleEvent);
   };
 
@@ -209,11 +208,9 @@ const bgAnimation = ()=> {
     
     function clearInactiveTimeout() {
       clearTimeout(inactive);
-      document.removeEventListener("touchstart", clearInactiveTimeout);
       document.removeEventListener("click", clearInactiveTimeout);
     }
   
-    document.addEventListener("touchstart", clearInactiveTimeout);
     document.addEventListener("click", clearInactiveTimeout);
   }
 
