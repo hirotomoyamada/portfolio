@@ -1,0 +1,24 @@
+// 下記で設定されたピクセルで vw と vh を計算する
+$responsive-width: (
+  // デスクトップ（レイアウト
+  'pc': 1920px,
+  // スマートフォン (レイアウト)
+  'sp': 519px,
+);
+
+// フォント
+$main_ff: 'Noto sans JP', sans-serif;
+$sub_ff: 'super mario sans', sans-serif;
+$acnt_ff: 'ro-san-std' ,sans-serif;
+
+// 使用するカラー
+$base_clr: #FFF;
+$main_clr: #141414;
+$sub_clr: #000;
+$acnt_clr: #E60002;
+
+// SNS
+$facebook_clr: #3b5998;
+$twitter_clr: #55acee;
+$line_clr: #00b900;
+$pocket_clr: #ef4156;

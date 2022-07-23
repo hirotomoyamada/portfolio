@@ -1,0 +1,117 @@
+// ページのレスポンシブ設定
+$width: responsive-width(sp);
+
+// ここから
+
+@media (max-width: $width) {
+  .intro {
+
+    &_ttl {
+      width: auto-min(400px);
+    }
+  }
+
+  .about {
+
+    &_desc {
+      font-size: auto-clamp(20px, 28px);
+
+      margin-bottom: auto-min(16px);
+    }
+
+    &_ttl {
+      font-weight: bold;
+      font-size: auto-clamp(28px, 42px);
+    }
+  }
+
+  .serf {
+
+    &_content {
+
+      &_en {
+        font-size: auto-clamp(16px, 24px);
+
+        display: block;
+        margin-left: 0;
+        margin-bottom: auto-min(16px);
+      }
+
+      &_ja {
+        font-size: auto-clamp(10px, 16px);
+
+        margin-bottom: auto-min(80px);
+      }
+    }
+  }
+
+  .history {
+    font-size: auto-clamp(10px, 12px);
+
+    li:not(:first-child) {
+      margin-top: auto-clamp(24px, 32px);
+    }
+  }
+
+  .achievement {
+    font-size: auto-clamp(10px, 12px);
+
+    &_ttl {
+      font-size: auto-clamp(28px, 36px);
+    }
+
+    &_content:not(:first-child) {
+      margin-top: auto-clamp(24px, 32px);
+    }
+  }
+
+  .client {
+    font-size: auto-clamp(8px, 10px);
+
+    &_ttl {
+      font-size: auto-clamp(28px, 36px);
+    }
+
+    &_contents {
+      height: 60vh;
+    }
+  }
+
+  .ultra {
+
+    &_shdw {
+      width: 50vw;
+    }
+  }
+
+  .favorite {
+    font-size: auto-clamp(8px, 10px);
+    line-height: 2;
+
+    &_ttl {
+      font-size: auto-clamp(28px, 36px);
+    }
+
+    &_content {
+      height: 60vh;
+      margin-bottom: auto-clamp(24px, 32px);
+    }
+  }
+
+  .godzilla {
+
+    &_shdw {
+      right: auto-min(-150px);
+      height: auto;
+    }
+  }
+
+  .end {
+    
+    &_img {
+      width: auto-min(270px);
+    }
+  }
+}
+
+// ここまで

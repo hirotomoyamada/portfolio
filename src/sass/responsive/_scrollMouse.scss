@@ -1,0 +1,17 @@
+// ページのレスポンシブ設定
+$width: responsive-width(sp);
+
+// ここから
+@media (max-width: $width) {
+  
+  .scrollMouse {
+    position: fixed;
+    bottom: auto-min(20px);
+
+    svg {
+      width: auto-min(32px);
+    }
+  }
+}
+
+// ここまで

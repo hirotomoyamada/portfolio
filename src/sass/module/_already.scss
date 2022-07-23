@@ -1,0 +1,58 @@
+// モジュールのレスポンシブ設定
+$width: responsive-width(pc);
+
+// ここから
+
+.already {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background: $main_clr;
+  z-index: 9999;
+
+  &_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_el {
+    background: #FFF;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    animation: moveScale 1.5s linear infinite -0.5s;
+    transform: scale(0);
+
+    &:nth-child(-n+3) {
+      left: 16px;
+      top: 48px;
+    }
+
+    &:nth-child(n+7) {
+      left: -16px;
+      top: -48px;
+    }
+
+    &:nth-child(-4n+9) {
+      animation-delay: -0.3s;
+    }
+
+    &:nth-child(-4n+14) {
+      animation-delay: -0.4s;
+    }
+    &:nth-child(4n) {
+      animation-delay: -0.2s;
+    }
+
+    &:nth-child(7) {
+      animation-delay: -0.1s;
+    }
+  }
+}
+
+// ここまで

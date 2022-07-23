@@ -1,0 +1,20 @@
+html {
+
+  body {
+    // ユーザーに選択させないため
+    user-select: none;
+    // 意図しない左右の挙動やはみ出しを抑える
+    overflow-x: hidden;
+
+    font-family: $main_ff;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .lock {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

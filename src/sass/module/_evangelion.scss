@@ -1,0 +1,109 @@
+// モジュールのレスポンシブ設定
+$width: responsive-width(pc);
+
+// ここから
+
+.evangelion {
+  display: none;
+  background: $sub_clr;
+  z-index: 999;
+
+  &_timeline_01 {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    svg {
+      width: auto-min(1000px);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &_timeline_02 {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    svg {
+      width: auto-min(1000px);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &_timeline_03 {
+    display: none;
+    background: #FF0000;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    &_inner {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 70vh;
+
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+  }
+
+  &_timeline_04 {
+    display: none;
+    background: $base_clr;
+
+    width: 100vw;
+    height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    svg {
+      width: auto-min(500px);
+
+      position: absolute;
+      bottom: auto-min(50px);
+      right: auto-min(50px);
+    }
+  }
+}
+
+// ここまで
