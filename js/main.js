@@ -1,6 +1,5 @@
 // DOM読み込み後実行
-window.addEventListener('DOMContentLoaded', ()=> {
-  
+window.addEventListener('DOMContentLoaded', () => {
   const keyName = 'visited';
   const keyValue = true;
 
@@ -9,7 +8,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
     sessionStorage.setItem(keyName, keyValue);
 
     //初回アクセス時処理
-    window.addEventListener('load', load)
+    window.addEventListener('load', load);
   } else {
     // 通常アクセス時処理
     stopLoadAnimation();
@@ -19,7 +18,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
 });
 
 // ロード後実行
-window.addEventListener('load', ()=> {
+window.addEventListener('load', () => {
   createContent(historys_01);
   createContent(historys_02);
   createContent(historys_03);
@@ -31,10 +30,10 @@ window.addEventListener('load', ()=> {
   createSpan();
 
   timelineAnimation();
-})
+});
 
 // リサイズ時実行
-window.addEventListener('resize', ()=> {
+window.addEventListener('resize', () => {
   setFillHeight();
 });
 
@@ -45,7 +44,7 @@ const historys_01 = {
     '2008年': [
       'アメリカ カリフォルニア州サンフランシスコから帰国後、兄弟ともに情報専門学校に進路を決め、ゲーム制作の道へ。',
     ],
-     '2011年　”　情報専門学校デザイン科　”': [
+    '2011年　”　情報専門学校デザイン科　”': [
       '17歳 ナガシマスパーランド「ポケモンサーチャーBW（ビーダブリュー）トレーニングセンター」のキャストとして評価を得て、エンターテインメントの道を考え始める。',
       '数々のプロモーションイベントのキャストを経験し、専門学校を中退することを決意する。',
     ],
@@ -56,38 +55,27 @@ const historys_01 = {
     ],
     '2013年': [
       '19歳 「EXILE LIVE TOUR 2013 EXILE PRIDE」「TREASURE05X 2013 10th Anniversary」「TOKAI SUMMIT’13」など、ドームツアーや野外ロックフェスに携わる。',
-    ]
-  }
-}
+    ],
+  },
+};
 const historys_02 = {
   category: 'history_02',
   tag: {
-    '2013年': [
-      '19歳 東京都渋谷区 プロモーション企画・制作会社「株式会社ALL AROUND」を設立 代表取締役に就任。',
-    ],
-    '2015年': [
-      '名古屋支社を設立。従業員数は8千人を超え、「マイナビバイト愛知県」にて月別応募者数 県内1位を記録する。',
-      '公益社団法人名古屋青年会議所内から推薦を受け、最年少で入会する。',
-    ],
-    '2019年': [
-      '「なにか、新しい発見をしたい」と度々思うようになり「株式会社ALL AROUND」代表取締役を辞任する。',
-      '約1年間、ニート生活(ゲーム三昧)へ。',
-    ],
+    '2013年': ['19歳 東京都渋谷区 プロモーション企画・制作会社を設立。代表取締役に就任。'],
+    '2019年': ['「なにか、新しい発見をしたい」と度々思うようになり代表取締役を辞任する。'],
     '2020年': [
       '弟がゲーム制作会社から独立、ゲーム制作会社を設立。',
       '兄弟の将来の夢「ゲームクリエイター」のことを思い出すようになる。',
-      '前職のプロモーション企画・制作のノウハウを活かし、現代の広告塔であるWEBサイトやWEBアプリケーションに興味を持ち始める。',
-    ]
-  }
-}
+      '前職のプロモーション企画・制作のノウハウを活かし、現代の広告塔であるWebサイトやアプリケーションに興味を持ち始める。',
+    ],
+  },
+};
 const historys_03 = {
   category: 'history_03',
   tag: {
-    '2021年5月': [
-      'WEBエンジニア・デザイナーになるべく勉強を始める。',
-    ]
-  }
-}
+    '2021年5月': ['Webエンジニア・デザイナーになるべく勉強を始める。'],
+  },
+};
 const achievements = {
   category: 'achievement',
   tag: {
@@ -95,22 +83,18 @@ const achievements = {
       'Halo 3 Japan Championship 個人・チーム戦 決勝大会進出',
       'ロストプラネット 雪賊日本一決定トーナメント 個人 決勝戦進出',
     ],
-     '2009年': [
-      '機動戦士ガンダム 戦場の絆ポータブル アンオフィシャル全国大会 優勝'
-    ],
+    '2009年': ['機動戦士ガンダム 戦場の絆ポータブル アンオフィシャル全国大会 優勝'],
     '2010年': [
       '機動戦士ガンダム 戦場の絆 オフィシャル全国大会 決勝大会進出',
       'ロストプラネット2 最強雪賊決定戦 チーム戦 決勝戦進出',
     ],
-    '2011年': [
-      'モンスターハンターポータブル 3rd MHP3rd狩王決定戦決勝大会 決勝大会進出'
-    ],
+    '2011年': ['モンスターハンターポータブル 3rd MHP3rd狩王決定戦決勝大会 決勝大会進出'],
     '2019年': [
       'FINAL FANTASY XIV 希望の園エデン零式 覚醒編 2層/4層 ナイト aDPSランキング 世界1位',
       'FINAL FANTASY XIV 禁断の地エウレカ バルデシオンアーセナル 日本初突破',
     ],
-  }
-}
+  },
+};
 const clients = {
   category: 'client',
   value: [
@@ -135,7 +119,7 @@ const clients = {
     '東海市',
     '東海テレビ放送株式会社',
     '東邦ガス株式会社',
-    '株式会社NTTドコモ',  
+    '株式会社NTTドコモ',
     '凸版印刷株式会社',
     '豊田市',
     'トヨタ自動車株式会社',
@@ -156,9 +140,9 @@ const clients = {
     '株式会社マイナビ',
     '株式会社メニコン',
     'レッドブル・ジャパン株式会社',
-    'etc.'
-  ]
-}
+    'etc.',
+  ],
+};
 const favorites_01 = {
   category: 'favorite_01',
   tag: {
@@ -210,8 +194,8 @@ const favorites_01 = {
       'LOST - 2004 ~ 2010 -',
       'ロング・ラブレター〜漂流教室〜 - 2002 -',
     ],
-  }
-}
+  },
+};
 const favorites_02 = {
   category: 'favorite_02',
   tag: {
@@ -255,15 +239,8 @@ const favorites_02 = {
       '裸の王様 - 1957 -',
       '火花 - 2015 -',
       '夢をかなえるゾウ - 2007 ~ 2020 -',
-
     ],
-    FashioBrand: [
-      'adidas',
-      'New Balance',
-      'CHAOPANIC TYPY',
-      'UNIQLO',
-      'LONG CHAMP',
-    ],
+    FashioBrand: ['adidas', 'New Balance', 'CHAOPANIC TYPY', 'UNIQLO', 'LONG CHAMP'],
     Game: [
       'Gears of War - 2006 ~ 2019 -',
       '機動戦士ガンダム 戦場の絆',
@@ -277,102 +254,101 @@ const favorites_02 = {
       'ポケットモンスター - 1996 ~ 2019 -',
       'ロストオデッセイ - 2008 -',
     ],
-    Perfume: [
-      'EGOISE - CHANEL -',
-      'CK ONE - Calvin Klein -',
-      'BLACK - BVLGARI -',
-    ],
-  }
-}
+    Perfume: ['EGOISE - CHANEL -', 'CK ONE - Calvin Klein -', 'BLACK - BVLGARI -'],
+  },
+};
 
 // 上記配列をHTMLに反映 & アニメーション用span生成
-const createContent = (target)=> {
+const createContent = (target) => {
   const category = target.category;
-  const tags = target.tag
-  const values = target.value
+  const tags = target.tag;
+  const values = target.value;
   const el = document.querySelector(`.${category}_contents`);
 
   if (tags == undefined) {
-    values.forEach(value => {
-      el.insertAdjacentHTML('beforeend',
+    values.forEach((value) => {
+      el.insertAdjacentHTML(
+        'beforeend',
         `<li class="${category}_content">
           <p class="${category}_value createSpan">${value}</p>
-        </li>`
-      )
-    })
+        </li>`,
+      );
+    });
   } else {
     for (key in tags) {
-      el.insertAdjacentHTML('beforeend',
+      el.insertAdjacentHTML(
+        'beforeend',
         `<li class="${category}_content ${category}_${key}">
           <p class="${category}_tag tag createSpan">${key}</p>
-        </li>`
-      )
+        </li>`,
+      );
     }
-    Object.keys(tags).forEach(key => {
+    Object.keys(tags).forEach((key) => {
       const target = document.querySelector(`.${category}_${key}`);
-      tags[key].forEach(value => {
-        target.insertAdjacentHTML('beforeend',
-        `<p class="${category}_value createSpan">${value}</p>`
-        )
-      })
-    })
+      tags[key].forEach((value) => {
+        target.insertAdjacentHTML(
+          'beforeend',
+          `<p class="${category}_value createSpan">${value}</p>`,
+        );
+      });
+    });
   }
-}
+};
 
 // アニメーション用span生成
 const createSpan = () => {
   const el = document.querySelectorAll('.createSpan');
 
-  el.forEach(value => {
-    value.innerHTML = value.textContent.replace(/\S/g, "<span>$&</span>");
-  })
+  el.forEach((value) => {
+    value.innerHTML = value.textContent.replace(/\S/g, '<span>$&</span>');
+  });
 
   const span = document.querySelectorAll('.createSpan span');
   span.forEach((value, index) => {
     value.dataset.scrollNum = index;
-  })
-}
+  });
+};
 
 // 要素を表示
-const showElement = (el)=> {
+const showElement = (el) => {
   const target = document.querySelector(el);
   target.style.opacity = 1;
-}
+};
 
 // 要素を非表示
-const hiddenElement = (el)=> {
+const hiddenElement = (el) => {
   const target = document.querySelector(el);
   target.style.opacity = 0;
-}
+};
 
 // 要素を表示
-const blockElement = (el)=> {
+const blockElement = (el) => {
   const target = document.querySelector(el);
   target.style.display = 'block';
-}
+};
 
 // 要素を非表示
-const noneElement = (el)=> {
+const noneElement = (el) => {
   const target = document.querySelector(el);
   target.style.display = 'none';
-}
+};
 
 // 要素のzindexを操作
-const zIndex = (el, value)=> {
+const zIndex = (el, value) => {
   const target = document.querySelector(el);
   target.style.zIndex = value;
-}
+};
 
 // bodyのbgを変更
-const bodyBgChange= (clr)=> {
+const bodyBgChange = (clr) => {
   document.body.style.backgroundColor = clr;
-}
+};
 
 // 100vhをCSSに反映
-const setFillHeight = ()=> {
+const setFillHeight = () => {
   const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
-}
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+};
 
 // 実行
 setFillHeight();
